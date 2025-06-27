@@ -1,7 +1,8 @@
 // Configuration for API endpoints
 export const config = {
-  // Use environment variable for API URL, fallback to localhost for development
-  apiBaseUrl: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+  // In production on Vercel, use relative URLs (Vercel handles routing)
+  // In development or with custom API URL, use full URL
+  apiBaseUrl: process.env.NEXT_PUBLIC_API_URL || '',
   
   // API endpoints
   endpoints: {
